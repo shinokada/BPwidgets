@@ -1,0 +1,45 @@
+{
+  "name": "shinokada/bpwidgets",
+  "description": ":description",
+  "license": "license",
+  "authors": [
+    {
+      "name": "Shinichi Okada",
+      "email": "okada.shin@gmail.com",
+      "homepage": "https://github.com/shinokada/bpwidgets"
+    }
+  ],
+  "homepage": "https://github.com/shinokada/bpwidgets",
+  "keywords": [
+    "Laravel",
+    "BPwidgets",
+    "Laravel-Backpack"
+  ],
+  "require": {
+    "illuminate/support": "~5"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~6.0",
+    "orchestra/testbench": "~3.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "shinokada\\BPwidgets\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "shinokada\\BPwidgets\\Tests\\": "tests"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "shinokada\\BPwidgets\\BPwidgetsServiceProvider"
+      ],
+      "aliases": {
+        "BPwidgets": "shinokada\\BPwidgets\\Facades\\BPwidgets"
+      }
+    }
+  }
+}
