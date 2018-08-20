@@ -1,6 +1,7 @@
 {
   "name": "shinokada/bpwidgets",
-  "description": ":description",
+	"description": "This library is for Laravel-Backpack. Title, position, order and content will be
+	saved in the database.",
   "license": "MIT",
   "authors": [
     {
