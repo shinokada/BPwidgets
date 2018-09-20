@@ -15,8 +15,7 @@ class CreateBpWidgetsTable extends Migration
         // TODO: use JSON data type for 'extras' instead of string
         Schema::create('widgets', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('title');
-            $table->string('slug');
+            $table->string('title')->nullable();
             $table->string('position');
             $table->tinyInteger('order');
             $table->text('content');

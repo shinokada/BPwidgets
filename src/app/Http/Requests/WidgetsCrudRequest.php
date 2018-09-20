@@ -24,8 +24,6 @@ class WidgetsCrudRequest extends FormRequest
     {
         $id = \Request::get('id');
         $rules = [
-            'title' => 'required',
-            'slug' => 'unique:widgets,slug' . ($id ? ',' . $id : ''),
             'position' => 'required',
             'order' => 'required',
             'content' => 'required',

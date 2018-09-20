@@ -44,13 +44,6 @@ class WidgetsController extends CrudController
             'type' => 'text',
         ]);
         $this->crud->addField([
-            'name' => 'slug',
-            'label' => 'Slug(URL)',
-            'type' => 'text',
-            'hint' => 'Will be automatically generated from name, if left empty',
-            // 'disabled' => 'disabled'
-        ]);
-        $this->crud->addField([
             'name' => 'order',
             'label' => 'Order',
             'type' => 'number',
@@ -67,11 +60,6 @@ class WidgetsController extends CrudController
             'label' => 'Content',
             'type' => 'wysiwyg',
         ]);
-        // $this->crud->addField([ // CHECKBOX
-        //     'name' => 'featured',
-        //     'label' => 'Featured item',
-        //     'type' => 'checkbox',
-        // ]);
         $this->crud->enableAjaxTable();
     }
 
