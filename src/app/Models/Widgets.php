@@ -9,7 +9,7 @@ class Widgets extends Model
 {
     use CrudTrait;
     protected $table = 'widgets';
-    protected $fillable = ['value'];
+    protected $fillable = ['title', 'position', 'order', 'content'];
     /**
      * Grab a widget value from the database.
      *
