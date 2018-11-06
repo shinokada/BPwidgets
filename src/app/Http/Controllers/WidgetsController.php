@@ -52,7 +52,7 @@ class WidgetsController extends CrudController
             'label' => 'Position',
             'type' => 'select2_from_array',
             'name' => 'position',
-            'options' => ['right' => 'Right sidebar', 'front' => 'Front page'],
+            'options' => ['right' => 'Right sidebar', 'front' => 'Front page', 'all' => 'All pages'],
             'allows_null' => false,
         ]);
         $this->crud->addField([
